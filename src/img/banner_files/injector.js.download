@@ -1,0 +1,38 @@
+(function() {
+  var readyStateCheckInterval = setInterval(function() {
+    if (document.readyState === 'complete') {
+      clearInterval(readyStateCheckInterval);
+      adoptInit();
+    }
+  }, 10);
+  function adoptInit() {
+    let link;
+    if (
+      location.host.includes('localhost:5000') ||
+      location.host.includes('localhost') ||
+      location.host.includes('adopt-bar-dev')
+    ) {
+      link = './';
+      // test localhost    
+      // link = '//localhost:5000/';
+    } else {
+      link = '//tag.goadopt.io/'; // prod
+      // link = '//adopt-bar-dev.netlify.app/' // dev
+    }
+    var h = document.createElement('script');
+    var t = document.createElement('link');
+    var s = document.getElementsByTagName('script')[0];
+    var c = document.createElement('div');
+    c.className = 'hkn-disclaimer-bar';
+    h.type = 'text/javascript';
+    h.charset = 'utf-8';
+    h.async = true;
+    t.rel = 'stylesheet';
+    t.href = link + 'bundle.css';
+    var ie = !('Promise' in window) || /foo/gi.flags != 'gi';
+    h.src = link + (ie ? 'bundleie.js' : 'bundle.js');
+    document.body.appendChild(c);
+    s.parentNode.insertBefore(t, s);
+    s.parentNode.insertBefore(h, s);
+  }
+})();
