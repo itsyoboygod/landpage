@@ -140,6 +140,7 @@ body {
     font-family: "Open Sans", sans-serif !important;
     text-align: center;
     font-size: 14px;
+    flex-direction: row;
     color: white;
     font-weight: bold;
     justify-content: center;
@@ -170,10 +171,82 @@ body {
     text-align: center;
 }
 
+
+.precos{
+    font-family: 'Open Sans', sans-serif!important;
+}
+
+#id-bloco-1-first-price{
+text-decoration: line-through;
+font-size: 20px;
+color: #6A6A6A;
+margin: 0;
+margin-top: 30px;
+}
+
+.precos h3 {    
+color: #6A6A6A;
+margin: 0;
+
+
+}
+
+#id-bloco-1-second-price{    
+        color: green;
+        font-size: 2rem;
+
+}
+
+#id-ou{
+    text-decoration: line-through;
+    font-size: 20px;
+    color: #6A6A6A;
+    margin: 0;
+    margin-top: 5px 5px;
+}
+
+#id-juros{
+    font-size: 20px;
+    color: #6A6A6A;
+    margin: 5px 5px;
+}
+
+
+#id-bloco-1-third-price{
+    color: green;
+    margin: 5px 5px;
+
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#btn-promocional{
+    font-size: 15px;
+    color: #fff !important;
+    background-color: green;
+
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 10px;
+
+}
+
+#btn-compre-agora{
+    background: #009809 !important;
+    width: 250px;
+    height: 60px;
+    color: #fff !important;
+    font-weight: 900 !important;
+    border-radius: 7px;
+    font-size: 15px !important;
+    outline: none;
+    border: none;
+}
+
 .bloco-2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border: 1px solid #ff6200;
     padding: 0 0 15px 0;
     border-radius: 25px;
