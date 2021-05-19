@@ -1,4 +1,16 @@
 @media (max-width: 800px) {
+    .items {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .carrousel-dots {
+        display: none !important;
+    }
+    .bloco-1,
+    .bloco-2,
+    .bloco-3 {
+        margin: 20px 0 !important;
+    }
     .dropdowns {
         flex-direction: column !important;
         align-items: center !important;
@@ -12,6 +24,12 @@
     }
     .portais {
         flex-wrap: wrap !important;
+    }
+    .input-email {
+        width: 90% !important;
+    }
+    .btn-send-email button {
+        width: 100px !important;
     }
 }
 
@@ -368,8 +386,20 @@ body {
     font-size: 2rem;
 }
 
+.lines {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.lines hr {
+    width: 100px;
+    height: 0;
+}
+
 #id-ou {
-    text-decoration: line-through;
     font-size: 20px;
     color: #6a6a6a;
     margin: 0;
@@ -478,7 +508,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: start;
-    width: 50%;
+    width: 45%;
 }
 
 .dropdown-row-1 p {
@@ -488,6 +518,29 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-row-1 button {
+    border: none;
+}
+
+.dropdown-row-1 button:hover {
+    cursor: pointer;
+}
+
+.answers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    margin: 0 !important;
+}
+
+#answer-1 {
+    border: none !important;
+    width: 100%;
 }
 
 .dropdown-row-2 {
@@ -504,6 +557,12 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-row-2 button {
+    border: none;
 }
 
 .satisfacao-garantida img {
@@ -568,6 +627,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .each-safe {
@@ -630,8 +690,9 @@ body {
 .email-text p {
     color: #fff;
     font-family: "Montserrat", Sans-serif;
-    margin: 0;
+    margin: 10px 0;
     font-size: 1rem;
+    text-align: center;
 }
 
 .input-email {
@@ -650,6 +711,7 @@ body {
 #id-input-email {
     width: 90%;
     border: none;
+    outline: none;
     border-radius: 50px;
     height: 30px;
     padding: 10px;
@@ -671,6 +733,7 @@ body {
     background: #a9d055;
     color: #fff;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .rodape {
@@ -699,6 +762,16 @@ body {
     margin: 5px 0;
 }
 
+.links a {
+    text-decoration: none;
+    color: #888;
+}
+
+.links a:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
 .duvidas {
     display: flex;
     flex-direction: column;
@@ -715,6 +788,26 @@ body {
 .duvidas p {
     color: #888;
     font-family: "Open Sans", sans-serif !important;
+}
+
+.duvidas a {
+    text-decoration: none;
+    color: #888;
+}
+
+.duvidas a:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.segurança-e-certificados a {
+    text-decoration: none;
+    color: #888;
+}
+
+.segurança-e-certificados a:hover {
+    opacity: 0.5;
+    transition: 0.2s;
 }
 
 .segurança-e-certificados h4 {
@@ -739,4 +832,14 @@ body {
 .meio-de-pagamento p {
     color: #888;
     font-family: "Open Sans", sans-serif !important;
+}
+
+.meio-de-pagamento a {
+    text-decoration: none;
+    color: #888;
+}
+
+.meio-de-pagamento a:hover {
+    opacity: 0.5;
+    transition: 0.2s;
 }

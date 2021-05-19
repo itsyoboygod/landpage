@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia Upp</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -262,7 +264,11 @@
                     <h3>
                         POR: <span id="id-bloco-1-second-price">R195,70</span>
                     </h3>
-                    <p id="id-ou">OU</p>
+                    <div class="lines">
+                        <hr>
+                        <p id="id-ou">OU</p>
+                        <hr>
+                    </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
                     <button id="btn-compre-agora">
@@ -300,7 +306,11 @@
                     <h3>
                         POR: <span id="id-bloco-1-second-price">R195,70</span>
                     </h3>
-                    <p id="id-ou">OU</p>
+                    <div class="lines">
+                        <hr>
+                        <p id="id-ou">OU</p>
+                        <hr>
+                    </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
                     <button id="btn-compre-agora">
@@ -339,7 +349,11 @@
                     <h3>
                         POR: <span id="id-bloco-1-second-price">R195,70</span>
                     </h3>
-                    <p id="id-ou">OU</p>
+                    <div class="lines">
+                        <hr>
+                        <p id="id-ou">OU</p>
+                        <hr>
+                    </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
                     <button id="btn-compre-agora">
@@ -380,7 +394,11 @@
                     <h3>
                         POR: <span id="id-bloco-1-second-price">R195,70</span>
                     </h3>
-                    <p id="id-ou">OU</p>
+                    <div class="lines">
+                        <hr>
+                        <p id="id-ou">OU</p>
+                        <hr>
+                    </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
                     <button id="btn-compre-agora">
@@ -418,7 +436,11 @@
                     <h3>
                         POR: <span id="id-bloco-1-second-price">R195,70</span>
                     </h3>
-                    <p id="id-ou">OU</p>
+                    <div class="lines">
+                        <hr>
+                        <p id="id-ou">OU</p>
+                        <hr>
+                    </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
                     <button id="btn-compre-agora">
@@ -457,7 +479,11 @@
                     <h3>
                         POR: <span id="id-bloco-1-second-price">R195,70</span>
                     </h3>
-                    <p id="id-ou">OU</p>
+                    <div class="lines">
+                        <hr>
+                        <p id="id-ou">OU</p>
+                        <hr>
+                    </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
                     <button id="btn-compre-agora">
@@ -485,21 +511,43 @@
 
         <div class="dropdowns">
             <div class="dropdown-row-1">
-                <p>Quais os efeitos do 100Peso?</p>
-                <p>Em quanto tempo terei resultado com 100Peso?</p>
-                <p>O 100Peso vai funcionar em mim?</p>
-                <p>Qual o prazo de entrega do 100Peso?</p>
-
+                <p>os efeitos do 100Peso?<button id="myelement">&#9660; </button></p>
+                <div class="answers" id="id-answers">
+                    <p id="answer-1">QUEST 1</p>
+                </div>
+                <p>Em quanto tempo terei resultado com 100Peso?<button ontoggle="myFunction()">&#9660; </button></p>
+                <div class="answers">
+                    <p id="answer-1">QUEST 1</p>
+                </div>
+                <p>O 100Peso vai funcionar em mim? <button ontoggle="myFunction()">&#9660; </button></p>
+                <div class="answers">
+                    <p id="answer-1">QUEST 1</p>
+                </div>
+                <p>Qual o prazo de entrega do 100Peso? <button ontoggle="myFunction()">&#9660; </button></p>
+                <div class="answers">
+                    <p id="answer-1">QUEST 1</p>
+                </div>
             </div>
             <div class="dropdown-row-2">
-                <p>Quais os efeitos do 100Peso?</p>
-                <p>Em quanto tempo terei resultado com 100Peso?</p>
-                <p>O 100Peso vai funcionar em mim?</p>
-                <p>Qual o prazo de entrega do 100Peso?</p>
+                <p>Quais os efeitos do 100Peso? <button ontoggle="myFunction()">&#9660; </button></p>
+                <div class="answers">
+                    <p id="answer-1">QUEST 1</p>
+                </div>
+                <p>Em quanto tempo terei resultado com 100Peso? <button ontoggle="myFunction()">&#9660; </button></p>
+                <div class="answers">
+                    <p id="answer-1">QUEST 1</p>
+                </div>
+                <p>O 100Peso vai funcionar em mim? <button ontoggle="myFunction()">&#9660; </button></p>
+                <div class="answers">
+                    <p id="answer-1">QUEST 1</p>
+                </div>
+                <p>Qual o prazo de entrega do 100Peso? <button ontoggle="myFunction()">&#9660; </button></p>
+                <div class="answers">
+                    <p id="answer-1">QUEST 1</p>
+                </div>
             </div>
 
         </div>
-
 
     </div>
 
@@ -653,37 +701,41 @@
         <div class="rows-rodape">
             <div class="links">
                 <h4>Links Úteis</h4>
-                <p>Produtos</p>
-                <p>Atendimento</p>
-                <p>Perguntas Frequentes</p>
-                <p>Políticas de Privacidade</p>
-                <p>Termos e Condições</p>
-                <p>Política de Reembolso</p>
-                <p>Meus Pedidos</p>
-                <p>Referência Científicas</p>
-                <p>Revendedores Oficiais</p>
-                <p>Covid-19</p>
+                <p><a href="#">Produtos</a></p>
+                <p><a href="#">Atendimento</a></p>
+                <p><a href="#">Perguntas Frequentes</a></p>
+                <p><a href="#">Políticas de Privacidade</a></p>
+                <p><a href="#">Termos e Condições</a></p>
+                <p><a href="#">Política de Reembolso</a></p>
+                <p><a href="#">Meus Pedidos</a></p>
+                <p><a href="#">Referência Científicas</a></p>
+                <p><a href="#">Revendedores Oficiais</a></p>
+                <p><a href="#">Covid-19</a></p>
             </div>
             <div class="duvidas">
                 <h4>Dúvidas?</h4>
                 <p>Para saber mais detalhes sobre o 100PESO consulte nossa página de "Dúvidas" ou entre em contato conosco através do link abaixo:</p>
-                <p>Chat online</p>
+                <p><a href="#">Chat online</a></p>
             </div>
             <div class="segurança-e-certificados">
                 <h4>Segurança e Certificados</h4>
-                <p>Produtos</p>
-                <p>Atendimento</p>
+                <p><a href="#">Produtos</a></p>
+                <p><a href="#">Atendimento</a></p>
             </div>
             <div class="meio-de-pagamento">
                 <h4>Segurança e Certificados</h4>
-                <p>Produtos</p>
-                <p>Atendimento</p>
+                <p><a href="#">Segurança</a></p>
+                <p><a href="#">Certificados</a></p>
             </div>
         </div>
     </div>
 
 
+    <script src="./js/quests_toggle.js"></script>
+
 
 </body>
+
+
 
 </html>
