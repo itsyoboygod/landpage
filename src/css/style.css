@@ -1,5 +1,27 @@
+@media (max-width: 1500px) {
+    .header {
+        width: 100% !important;
+    }
+    .composicao-header {
+        width: 100% !important;
+    }
+    .composicao-header-title h1 {
+        font-size: 3rem !important;
+    }
+}
+
 @media (max-width: 800px) {
-    .header{
+    .w3-teal {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(225, 158, 104) !important;
+    }
+    .w3-teal a {
+        margin: 0 10px;
+    }
+    .header {
+        display: none !important;
         flex-direction: column;
         text-align: center;
         justify-content: space-evenly;
@@ -17,10 +39,9 @@
     .bloco-3 {
         margin: 20px 0 !important;
     }
-.each-beneficio{
-    margin: 20px 0 !important;
-}
-
+    .each-beneficio {
+        margin: 20px 0 !important;
+    }
     .dropdowns {
         flex-direction: column !important;
         align-items: center !important;
@@ -35,15 +56,56 @@
     .portais {
         flex-wrap: wrap !important;
     }
-
-    .each-safe{
-        
-    }
+    .each-safe {}
     .input-email {
         width: 90% !important;
     }
     .btn-send-email button {
         width: 100px !important;
+    }
+    /* ================================BENEFICIOS================================ */
+    .sobre-o-produto {
+        flex-direction: column !important;
+        margin: 10px !important;
+        width: 97% !important;
+    }
+    .sobre-title {
+        width: 100% !important;
+        margin: 10px 0px;
+    }
+    .sobre-text {
+        width: 100% !important;
+        margin: 10px 0px;
+        text-align: center !important;
+    }
+    .sobre-title h1 {
+        font-size: 5rem !important;
+    }
+    .outros-beneficios {
+        flex-direction: column !important;
+    }
+    .outro-beneficios-title h1 {
+        text-align: center !important;
+    }
+    .beneficios-pros {
+        align-self: center;
+    }
+    .beneficios-contra {
+        align-self: center;
+    }
+    .composicao-header {
+        flex-direction: column !important;
+    }
+    .composicao-header-title {
+        width: 100% !important;
+    }
+    .composicao-header-title h1 {
+        font-size: 5rem;
+        margin: 0;
+        font-size: 3rem;
+    }
+    .composicao-header-text {
+        width: 100% !important;
     }
 }
 
@@ -55,7 +117,7 @@ body {
 .back-header {
     left: 0;
     width: 100%;
-    background: rgb(0, 113, 51);
+    background: rgb(225, 158, 104);
     text-align: -webkit-center;
 }
 
@@ -214,6 +276,10 @@ body {
     font-family: "Open Sans", sans-serif !important;
 }
 
+.btn-artistas {
+    display: flex;
+}
+
 #btn-compre-agora {
     margin: 50px;
 }
@@ -289,7 +355,7 @@ body {
 
 .mid-section-title p {
     font-size: 16px;
-    margin-top: -20px !important;
+    margin-top: 0px !important;
     font-family: "Open Sans", sans-serif !important;
     color: #6a6a6a;
     line-height: 20px;
@@ -536,7 +602,7 @@ body {
     font-weight: 500;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0 ;
+    margin-bottom: 0;
 }
 
 .dropdown-row-1 button {
@@ -547,11 +613,11 @@ body {
     cursor: pointer;
 }
 
-.btns-toggle{
+.btns-toggle {
     cursor: pointer;
 }
 
-.btns-toggle:hover{
+.btns-toggle:hover {
     opacity: 0.5s;
     transition: 0.2s;
 }
@@ -564,12 +630,11 @@ body {
     margin: 0 !important;
 }
 
-.answer-p{
+.answer-p {
     border: none !important;
     border-radius: 0 !important;
     margin: 0;
 }
-
 
 #answer-1 {
     border: none !important;
@@ -579,7 +644,7 @@ body {
 .dropdown-row-2 {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     text-align: start;
 }
 
@@ -636,7 +701,7 @@ body {
     margin: 30px 20px;
 }
 
-.midia-btn{
+.midia-btn {
     display: flex;
     justify-content: center;
 }
@@ -654,9 +719,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
-
-
 
 .safe-items {
     display: flex;
@@ -756,7 +818,7 @@ body {
     border: none;
     outline: none;
     border-radius: 50px;
-    height: 30px;
+    /* height: 30px; */
     padding: 10px;
     font-family: "Montserrat", Sans-serif;
 }
@@ -885,4 +947,134 @@ body {
 .meio-de-pagamento a:hover {
     opacity: 0.5;
     transition: 0.2s;
+}
+
+
+/* ================================BENEFICIOS================================ */
+
+.sobre-o-produto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 50px 0;
+}
+
+.sobre-title {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-title h1 {
+    margin: 0;
+    font-family: "Open Sans", sans-serif !important;
+    color: #0078b7;
+    font-size: 7rem;
+    text-align: center;
+}
+
+.sobre-text {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: right;
+}
+
+.sobre-text p {
+    margin: 0;
+    font-family: "Open Sans", sans-serif !important;
+    color: #534f52;
+    font-size: 1rem;
+}
+
+.outros-beneficios {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgb(249, 249, 249);
+    padding: 50px 0;
+}
+
+.beneficios-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.beneficios-pros {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.outro-beneficios-title h1 {
+    margin: 0;
+    font-family: "Open Sans", sans-serif !important;
+    color: #0078b7;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.outro-beneficios-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.outro-beneficios-list p {
+    font-size: 1.2rem;
+}
+
+.beneficios-bottom-text {
+    display: flex;
+    width: 50%;
+    align-self: center;
+}
+
+.beneficios-bottom-text p {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.composição-dropdown {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.composicao-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.composicao-header-title {
+    display: flex;
+    width: 50%;
+    font-size: 3rem;
+    color: #0078b7;
+    font-family: "Open Sans", sans-serif !important;
+    justify-content: center;
+}
+
+.composicao-header-title h1 {
+    margin: 10px 0;
+}
+
+.composicao-header-text {
+    display: flex;
+    width: 50%;
+    font-size: 0.8rem;
+    color: grey;
+    font-family: "Open Sans", sans-serif !important;
+    justify-content: center;
+    align-items: center;
 }

@@ -8,13 +8,32 @@
     <title>Agencia Upp</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <script src="./js/quests_toggle.js"></script>
+    <script src="./js/header_sidebar_menu.js"></script>
+
 
 
 </head>
 
 <body>
+
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-teal" style="display:none">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <h1>LOGO</h1>
+        <span> <a href="#">🛒</a></span>
+    </div>
+
 
     <div class="back-header">
         <div class="header">
@@ -32,6 +51,9 @@
         </button>
             <button class="buttons-header" id="id-btn-atendimento">
             <a href="#">ATENDIMENTO</a>
+        </button>
+            <button class="buttons-header" id="id-btn-beneficios">
+            <a href="beneficios.html">BENEFÍCIOS</a>
         </button>
             <button class="buttons-header" id="id-btn-carrinho-compras">
             <a href="#">🛒</a>
@@ -137,11 +159,11 @@
         </div>
 
         <div class="btn-artistas">
-            <a href="#">
             <button id="btn-compre-agora">
-                COMPRE AGORA
+                <a href="#">
+                    COMPRE AGORA
+                </a>
                 </button>
-            </a>
         </div>
 
     </div>
@@ -226,11 +248,11 @@
             </div>
         </div>
 
-        <a href="#">
         <button id="btn-compre-agora">
+            <a href="#">
             COMPRE AGORA
+        </a>
         </button>
-    </a>
 
     </div>
 
@@ -278,11 +300,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="#">
                     <button id="btn-compre-agora">
+                            <a href="#">
                         COMPRE AGORA
+                    </a>
                     </button>
-                </a>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -322,11 +344,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="#">
                     <button id="btn-compre-agora">
+                            <a href="#">
                        COMPRE AGORA
+                    </a>
                     </button>
-                </a>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -367,11 +389,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="#">
                     <button id="btn-compre-agora">
+                        <a href="#">
                         COMPRE AGORA
+                        </a>
                     </button>
-                </a>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -414,11 +436,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="#"></a>
                     <button id="btn-compre-agora">
+                        <a href="#">
                         COMPRE AGORA
+                    </a>
                     </button>
-                </a>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -458,11 +480,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="#">
                     <button id="btn-compre-agora">
+                            <a href="#">
                         COMPRE AGORA
+                    </a>
                     </button>
-                </a>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -503,11 +525,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="#">
                     <button id="btn-compre-agora">
+                            <a href="#">
                        COMPRE AGORA
+                    </a>
                     </button>
-                </a>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -532,37 +554,45 @@
             <div class="dropdown-row-1">
                 <p>Os efeitos do 100Peso?<button class="btns-toggle" id="btn-toggle-1">&#9660; </button></p>
                 <div class="answers" id="answers-1">
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. </p>
                 </div>
                 <p>Em quanto tempo terei resultado com 100Peso?<button class="btns-toggle" id="btn-toggle-2">&#9660; </button></p>
-                <div class="answers" id="answers-2" >
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <div class="answers" id="answers-2">
+                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. </p>
                 </div>
                 <p>O 100Peso vai funcionar em mim? <button class="btns-toggle" id="btn-toggle-3">&#9660; </button></p>
-                <div class="answers" id="answers-3" >
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <div class="answers" id="answers-3">
+                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. </p>
                 </div>
                 <p>Qual o prazo de entrega do 100Peso? <button class="btns-toggle" id="btn-toggle-4">&#9660; </button></p>
-                <div class="answers" id="answers-4" >
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <div class="answers" id="answers-4">
+                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. </p>
                 </div>
             </div>
             <div class="dropdown-row-2">
                 <p>Quais Os efeitos do 100Peso? <button class="btns-toggle" id="btn-toggle-5">&#9660; </button></p>
-                <div class="answers" id="answers-5" >
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <div class="answers" id="answers-5">
+                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. </p>
                 </div>
                 <p>Em quanto tempo terei resultado com 100Peso? <button class="btns-toggle" id="btn-toggle-6">&#9660; </button></p>
-                <div class="answers" id="answers-6" >
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <div class="answers" id="answers-6">
+                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. </p>
                 </div>
                 <p>O 100Peso vai funcionar em mim? <button class="btns-toggle" id="btn-toggle-7">&#9660; </button></p>
-                <div class="answers" id="answers-7" >
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <div class="answers" id="answers-7">
+                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. </p>
                 </div>
                 <p>Qual o prazo de entrega do 100Peso? <button class="btns-toggle" id="btn-toggle-8">&#9660; </button></p>
-                <div class="answers" id="answers-8" >
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <div class="answers" id="answers-8">
+                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. </p>
                 </div>
             </div>
 
@@ -620,12 +650,12 @@
         </div>
 
         <div class="midia-btn">
-        <a href="#">
-        <button id="btn-compre-agora">
+            <button id="btn-compre-agora">
+                    <a href="#">
             COMPRE AGORA
+        </a>
         </button>
-    </a>
-</div>
+        </div>
     </div>
 
 
@@ -687,13 +717,13 @@
         </div>
 
 
-        <div class="safe-data"> 
-        <a href="#">
+        <div class="safe-data">
             <button id="btn-compre-agora">
+                    <a href="#">
                 COMPRE AGORA
+            </a>
             </button>
-        </a>
-    </div>
+        </div>
 
 
     </div>
