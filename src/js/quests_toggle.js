@@ -49,7 +49,31 @@ $(document).ready(function() {
 /* ================================BENEFICIOS================================ */
 
 $(document).ready(function() {
-    $("#btn-toggle-1-1").click(function() {
-        $("#answers-1").toggle();
+    $("#btn-toggle-9").click(function() {
+        $("#answers-9").toggle();
+    });
+});
+
+$(document).ready(function() {
+    $("#btn-toggle-10").click(function() {
+        $("#answers-10").toggle();
+    });
+});
+
+$(document).ready(function() {
+    $("#btn-toggle-11").click(function() {
+        $("#answers-11").toggle();
+    });
+});
+
+$(document).ready(function() {
+    $("#btn-toggle-12").click(function() {
+        $("#answers-12").toggle();
+    });
+});
+
+$(document).ready(function() {
+    $("#btn-toggle-13").click(function() {
+        $("#answers-13").toggle();
     });
 });

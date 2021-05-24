@@ -107,6 +107,12 @@
     .composicao-header-text {
         width: 100% !important;
     }
+    .qna-header-title h1 {
+        font-size: 3rem !important;
+    }
+    .warning-bottom p {
+        font-size: 0.8rem !important;
+    }
 }
 
 body {
@@ -311,7 +317,7 @@ body {
 }
 
 .carrousel-dots {
-    height: 100px;
+    height: 150px;
 }
 
 .carrousel-texts {
@@ -607,6 +613,8 @@ body {
 
 .dropdown-row-1 button {
     border: none;
+    outline: none;
+    background-color: none;
 }
 
 .dropdown-row-1 button:hover {
@@ -845,6 +853,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 30px 0;
+    background-color: #fff9f9;
 }
 
 .rows-rodape {
@@ -1069,6 +1078,27 @@ body {
     margin: 10px 0;
 }
 
+.qna {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.qna-header-title {
+    display: flex;
+    font-size: 3rem;
+    width: 50%;
+    color: #0078b7;
+    font-family: "Open Sans", sans-serif !important;
+    justify-content: center;
+    margin: auto;
+}
+
+.qna-collumn {
+    display: flex;
+    justify-content: center;
+}
+
 .composicao-header-text {
     display: flex;
     width: 50%;
@@ -1077,4 +1107,18 @@ body {
     font-family: "Open Sans", sans-serif !important;
     justify-content: center;
     align-items: center;
+}
+
+.warning-bottom {
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.warning-bottom p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif !important;
 }
