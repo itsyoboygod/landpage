@@ -132,6 +132,7 @@ body {
     justify-content: space-evenly;
     padding: 30px;
     width: 50%;
+    align-items: center;
 }
 
 .header button {
@@ -148,6 +149,7 @@ body {
     border-radius: 30px;
     color: #69ff59 !important;
     padding: 7px 20px 7px 20px;
+    height: fit-content;
 }
 
 #id-btn-faca-seu-pedido a {
@@ -172,6 +174,14 @@ body {
     font-weight: 700;
     font-style: normal;
     font-family: "Open Sans", sans-serif !important;
+}
+
+#id-logo {
+    /* width: 100%; */
+}
+
+#id-img-logo {
+    height: 100px;
 }
 
 #id-btn-carrinho-compras a {
