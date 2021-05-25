@@ -976,7 +976,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     width: 90%;
-    margin: 50px 0;
+    margin: 50px auto;
 }
 
 .sobre-title {
@@ -994,13 +994,22 @@ body {
     text-align: center;
 }
 
+.pote-img {
+    width: 50%;
+    align-self: center;
+}
+
+.pote-img img {
+    width: 100%;
+}
+
 .sobre-text {
     display: flex;
     width: 50%;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    text-align: right;
+    text-align: justify;
 }
 
 .sobre-text p {
@@ -1042,7 +1051,9 @@ body {
 
 .outro-beneficios-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 .outro-beneficios-list p {
