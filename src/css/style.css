@@ -11,6 +11,9 @@
 }
 
 @media (max-width: 800px) {
+    #img-logo-header {
+        width: 30%;
+    }
     .w3-teal {
         display: flex !important;
         justify-content: space-between;
@@ -66,7 +69,6 @@
     /* ================================BENEFICIOS================================ */
     .sobre-o-produto {
         flex-direction: column !important;
-        margin: 10px !important;
         width: 97% !important;
     }
     .sobre-title {
@@ -120,17 +122,47 @@ body {
     margin: 0 auto !important;
 }
 
+#mySidebar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
+    width: 50%;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto;
+}
+
+#mySidebar button {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
+
+#mySidebar a {
+    width: 100%;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 15px 10px;
+}
+
 .back-header {
     left: 0;
     width: 100%;
-    background: rgb(225, 158, 104);
+    background: #e8ceb3;
     text-align: -webkit-center;
 }
 
 .header {
     display: flex;
     justify-content: space-evenly;
-    padding: 30px;
     width: 50%;
     align-items: center;
 }
@@ -145,15 +177,15 @@ body {
 }
 
 #id-btn-faca-seu-pedido {
-    border: 1px solid #69ff59;
+    border: 1px solid #4d5e4c;
     border-radius: 30px;
-    color: #69ff59 !important;
+    color: #4d5e4c !important;
     padding: 7px 20px 7px 20px;
     height: fit-content;
 }
 
 #id-btn-faca-seu-pedido a {
-    color: #69ff59 !important;
+    color: #4d5e4c !important;
     font-weight: 700;
     font-style: normal;
     font-family: "Open Sans", sans-serif !important;
@@ -170,7 +202,7 @@ body {
 .buttons-header a {
     text-decoration: none;
     font-size: 10px;
-    color: #fff;
+    color: black;
     font-weight: 700;
     font-style: normal;
     font-family: "Open Sans", sans-serif !important;
@@ -191,7 +223,7 @@ body {
 .banner {
     top: 92px;
     height: 450px;
-    background-image: url("/src/img/new.png");
+    background-image: url("/src/img/bannertathy.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 1920px;
@@ -267,10 +299,13 @@ body {
 #id-famoso-foto {
     width: 250px;
     height: 250px;
+    /* border-radius: 130px; */
+    /* border: solid 10px; */
+    /* padding: 5px; */
 }
 
 .title-artista p {
-    color: #009834;
+    color: #4d5e4c;
     font-family: "Open Sans", sans-serif !important;
     font-size: 19px;
     font-weight: bold;
@@ -420,9 +455,21 @@ body {
     font-family: "Libre Franklin", sans-serif !important;
 }
 
+.img-ofertas {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+#id-img-ofertas {
+    width: 420px;
+    margin: 0;
+    padding: 50px;
+}
+
 .countdown {
     display: flex;
-    background-color: rgb(15, 88, 15);
+    background-color: #4d5e4c;
     color: white;
     font-family: "Open Sans", sans-serif !important;
     text-align: center;
@@ -480,7 +527,7 @@ body {
 }
 
 #id-bloco-1-second-price {
-    color: green;
+    color: #4d5e4c;
     font-size: 2rem;
 }
 
@@ -511,7 +558,7 @@ body {
 }
 
 #id-bloco-1-third-price {
-    color: green;
+    color: #4d5e4c;
     margin: 5px 5px;
     font-size: 3rem;
     font-weight: bolder;
@@ -1017,6 +1064,7 @@ body {
     font-family: "Open Sans", sans-serif !important;
     color: #534f52;
     font-size: 1rem;
+    text-align: justify;
 }
 
 .outros-beneficios {
@@ -1062,7 +1110,7 @@ body {
 
 .beneficios-bottom-text {
     display: flex;
-    width: 50%;
+    width: 60%;
     align-self: center;
 }
 
