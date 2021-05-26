@@ -30,6 +30,12 @@
         justify-content: space-evenly;
         padding: 10px !important;
     }
+    .banner {
+        display: none !important;
+    }
+    .banner-top-mobile {
+        display: flex !important;
+    }
     .items {
         flex-direction: column !important;
         align-items: center;
@@ -115,6 +121,12 @@
     .warning-bottom p {
         font-size: 0.8rem !important;
     }
+    .satisfacao-garantida {
+        display: none !important;
+    }
+    .satisfacao-garantida-mobile {
+        display: flex !important;
+    }
 }
 
 body {
@@ -128,10 +140,20 @@ body {
     flex-direction: column;
     height: -webkit-fill-available;
     width: 50%;
-    background-color: #fff;
+    background-color: #e8ceb3;
     position: fixed !important;
     z-index: 1;
     overflow: auto;
+}
+
+.new-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-sidebar a {
+    text-decoration: none;
+    color: black;
 }
 
 #mySidebar button {
@@ -142,6 +164,7 @@ body {
     border: none;
     white-space: normal;
     float: none;
+    background-color: #4d5e4c;
     outline: 0;
 }
 
@@ -151,6 +174,7 @@ body {
     font-size: 15px;
     line-height: 1.5;
     padding: 15px 10px;
+    border-bottom: solid 1px #3333;
 }
 
 .back-header {
@@ -227,6 +251,11 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 1920px;
+}
+
+.banner-top-mobile {
+    display: none;
+    background-image: url("/src/img/thathy_mobile_banner1.jpg") !important;
 }
 
 .badge {
@@ -331,14 +360,14 @@ body {
     display: flex;
 }
 
-#btn-compre-agora {
-    margin: 50px;
-}
-
 #btn-compre-agora a {
     cursor: pointer;
-    text-decoration: none;
+    text-decoration-line: none !important;
     color: white;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 .carrousel {
@@ -346,6 +375,7 @@ body {
     background-color: #f2f2f2;
     flex-direction: column;
     place-items: center;
+    padding: 50px 0;
 }
 
 .beneficios {
@@ -436,7 +466,7 @@ body {
     text-align: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background: #ff6200;
+    background: #4d5e4c;
     padding: 10px 10px 1px 10px;
 }
 
@@ -462,7 +492,7 @@ body {
 }
 
 #id-img-ofertas {
-    width: 420px;
+    width: 370px;
     margin: 0;
     padding: 50px;
 }
@@ -497,8 +527,8 @@ body {
 .bloco-1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border: 1px solid #ff6200;
+    /* justify-content: center; */
+    border: 1px solid #4d5e4c;
     padding: 0 0 15px 0;
     border-radius: 25px;
     box-shadow: 0px 10px 30px rgb(171 171 171 / 60%);
@@ -572,30 +602,73 @@ body {
 #btn-promocional {
     font-size: 15px;
     color: #fff !important;
-    background-color: green;
+    background-color: #4d5e4c;
     font-weight: bold;
     border: none;
     outline: none;
     padding: 10px;
 }
 
+
+/* 
+#btn-promocional {
+    width: 50px;
+    height: 50px;
+    -webkit-animation: NAME-YOUR-ANIMATION 1s infinite;
+    /* Safari 4+ */
+
+
+/* -moz-animation: NAME-YOUR-ANIMATION 1s infinite; */
+
+
+/* Fx 5+ */
+
+
+/* -o-animation: NAME-YOUR-ANIMATION 1s infinite; */
+
+
+/* Opera 12+ */
+
+
+/* animation: NAME-YOUR-ANIMATION 1s infinite; */
+
+
+/* IE 10+, Fx 29+ */
+
+
+/* }
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+    0%,
+    49% {
+        background-color: rgb(117, 209, 63);
+        border: 3px solid #e50000;
+    }
+    
+    50%,
+    100% {
+        background-color: #e50000;
+        border: 3px solid rgb(117, 209, 63);
+    }
+} */
+
 #btn-compre-agora {
-    background: #009809 !important;
-    width: 250px;
-    height: 60px;
+    background: #4d5e4c !important;
     color: #fff !important;
     font-weight: 900 !important;
     border-radius: 7px;
     font-size: 15px !important;
     outline: none;
     border: none;
+    padding: 20px;
     align-self: center;
+    margin: 20px;
+    width: fit-content;
 }
 
 .bloco-2 {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ff6200;
+    border: 1px solid #4d5e4c;
     padding: 0 0 15px 0;
     border-radius: 25px;
     box-shadow: 0px 10px 30px rgb(171 171 171 / 60%);
@@ -606,7 +679,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid #ff6200;
+    border: 1px solid #4d5e4c;
     padding: 0 0 15px 0;
     border-radius: 25px;
     box-shadow: 0px 10px 30px rgb(171 171 171 / 60%);
@@ -733,6 +806,10 @@ body {
     width: 100%;
 }
 
+.satisfacao-garantida-mobile {
+    display: none;
+}
+
 .midia {
     display: flex;
     justify-content: center;
@@ -756,6 +833,15 @@ body {
     text-align: center;
 }
 
+.midia-img {
+    width: 20%;
+    align-self: center;
+}
+
+.midia-img img {
+    width: 100%;
+}
+
 .midiattext {
     font-size: 15px;
     color: #666;
@@ -763,7 +849,7 @@ body {
 }
 
 .midiattext p {
-    margin: 30px 20px;
+    margin: 0;
 }
 
 .midia-btn {
@@ -776,6 +862,7 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #f2f2f2;
+    padding: 50px 0;
 }
 
 .safe-data {
@@ -836,7 +923,8 @@ body {
 .email {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to right, #95cf49, #00bc72);
+    /* background-image: linear-gradient(to right, #95cf49, #00bc72); */
+    background-color: #e9ceb3;
     padding: 40px 0;
     justify-content: center;
     align-items: center;
@@ -900,7 +988,7 @@ body {
     padding: 15px;
     border-radius: 20px;
     font-weight: bold;
-    background: #a9d055;
+    background: #4d5e4c;
     color: #fff;
     font-size: 12px;
     cursor: pointer;

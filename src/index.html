@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <script src="./js/countdownclock.js"></script>
     <script src="./js/quests_toggle.js"></script>
     <script src="./js/header_sidebar_menu.js"></script>
 
@@ -21,15 +22,22 @@
 
     <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
         <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">Produtos</a>
+        <a href="#" class="w3-bar-item w3-button">Atendimento</a>
+        <a href="#" class="w3-bar-item w3-button">Perguntas Frequentes</a>
+        <a href="#" class="w3-bar-item w3-button">Políticas de Privacidade</a>
+        <a href="#" class="w3-bar-item w3-button">Termos e Condições</a>
+        <a href="#" class="w3-bar-item w3-button">Revendedores Oficiais</a>
+        <a href="#" class="w3-bar-item w3-button">Referências Científicas</a>
+        <a href="#" class="w3-bar-item w3-button">Meus pedidos</a>
+        <a href="#" class="w3-bar-item w3-button">Minha conta</a>
 
     </div>
 
     <!-- Page Content -->
-    <div class="w3-teal" style="display:none">
-        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-teal" style="display:none; background-color: #e8ceb3 !important;">
+        <button class="w3-button w3-teal w3-xlarge" style="background-color: #e8ceb3 !important; color: black !important;;" onclick="w3_open()">☰</button>
         <img id="img-logo-header" src="./img/corpo_vita.png">
         <span> <a href="#">🛒</a></span>
     </div>
@@ -62,33 +70,38 @@
 
     <div class="banner"></div>
 
+    <div class="banner-top-mobile">
+        <img src="./img/thathy_mobile_banner1.jpg">
+    </div>
+
+
     <div class="badge">
         <div class="items">
             <div class="icon"><img src="./img/item-star.png"></div>
             <div class="texts">
-                <p>O EMAGRECEDOR</p>
-                <p>DAS CELEBRIDADES</p>
+                <p>O COMPOSTO EMAGRECEDOR</p>
+                <p>100% NATURAL</p>
             </div>
         </div>
         <div class="items">
             <div class="icon"><img src="./img/item-card.png"></div>
             <div class="texts">
                 <p>PAGUE COM CARTÃO</p>
-                <p>EM ATÉ 12X SEM JUROS</p>
+                <p>EM ATÉ 10X SEM JUROS</p>
             </div>
         </div>
         <div class="items">
             <div class="icon"><img src="./img/item-truck.png"></div>
             <div class="texts">
-                <p>FRETE GRÁTIS</p>
-                <p>PARA TODO O BRASIL</p>
+                <!-- <p>FRETE GRÁTIS</p> -->
+                <p>ENVIAMOS PARA TODO O BRASIL</p>
             </div>
         </div>
         <div class="items">
             <div class="icon"><img src="./img/item-lock.png"></div>
             <div class="texts">
                 <p>SITE 100% SEGURO</p>
-                <p>COM SEGURANÇA SSL</p>
+                <!-- <p>COM SEGURANÇA SSL</p> -->
             </div>
         </div>
     </div>
@@ -104,14 +117,14 @@
         <div class="selfies">
             <div class="each-photo">
                 <div class="photo-artista"> <img id="id-famoso-foto" src="./img/bf_af.jpeg"></div>
-                <div class="title-artista">
+                <!-- <div class="title-artista">
 
-                </div>
+                </div> -->
 
             </div>
             <div class="each-photo">
                 <div class="photo-artista"><img id="id-famoso-foto" src="./img/teste4.jpeg"></div>
-                <div class="title-artista">
+                <!-- <div class="title-artista">
                     <p>Adriana</p>
                 </div>
                 <div class="subtitle-artista">
@@ -119,11 +132,11 @@
                 </div>
                 <div class="arroba-artista">
                     <p>Original ervas</p>
-                </div>
+                </div> -->
             </div>
             <div class="each-photo">
                 <div class="photo-artista"><img id="id-famoso-foto" src="./img/teste5.jpeg"></div>
-                <div class="title-artista">
+                <!-- <div class="title-artista">
                     <p>Jefferson</p>
                 </div>
                 <div class="subtitle-artista">
@@ -131,11 +144,11 @@
                 </div>
                 <div class="arroba-artista">
                     <p>Original ervas</p>
-                </div>
+                </div> -->
             </div>
             <div class="each-photo">
                 <div class="photo-artista"><img id="id-famoso-foto" src="./img/teste6.jpeg"></div>
-                <div class="title-artista">
+                <!-- <div class="title-artista">
                     <p>Cristina</p>
                 </div>
                 <div class="subtitle-artista">
@@ -143,18 +156,18 @@
                 </div>
                 <div class="arroba-artista">
                     <p>Original ervas</p>
-                </div>
+                </div> -->
             </div>
 
 
         </div>
 
         <div class="btn-artistas">
-            <button id="btn-compre-agora">
-                <a href="#">
+            <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                <div id="btn-compre-agora">
                     COMPRE AGORA
-                </a>
-                </button>
+                </div>
+            </a>
         </div>
 
     </div>
@@ -162,8 +175,8 @@
     <div class="carrousel">
         <div class="mid-section">
             <div class="mid-section-title">
-                <h1>Nutrientes essenciais para o emagrecimento saudável</h1>
-                <p>Composição rica em Vitaminas A e C, Quitosana, Psylium, Espirulina e Cromo.</p>
+                <h1>Composto natural com capacidade de reduzir medidas e queimar gorduras</h1>
+                <p>Composição: Pholia Negra, Matcha, Orlistat, Cáscara sagrada, Agar-Agar, Glucomannan e Asiaticoside</p>
             </div>
         </div>
 
@@ -174,12 +187,14 @@
                 </div>
                 <div class="carrousel-texts">
                     <div class="title-beneficio">
-                        <p>Queima de gordura</p>
+                        <!-- <p>Queima de gordura</p> -->
+                        <p>Redução de medidas</p>
+
                     </div>
                     <div class="text-beneficio">
-                        <p>O efeito termogênico do </p>
-                        <p>100Peso eleva a queima natural</p>
-                        <p>e acelerada da gordura.</p>
+                        <p>Elimina a gordura corporal e reduz </p>
+                        <p>as medidas do seu corpo para uma </p>
+                        <p>vida mais saudável. </p>
                     </div>
                 </div>
             </div>
@@ -192,12 +207,13 @@
                 </div>
                 <div class="carrousel-texts">
                     <div class="title-beneficio">
-                        <p>Queima de gordura</p>
+                        <p>Acelera o metabolismo</p>
                     </div>
                     <div class="text-beneficio">
-                        <p>O efeito termogênico do </p>
-                        <p>100Peso eleva a queima natural</p>
-                        <p>e acelerada da gordura.</p>
+
+                        <p>O Matcha é o composto ideal para </p>
+                        <p>aceleração do metabolismo, fazendo com que</p>
+                        <p> o corpo trabalhe mais, com menos.</p>
                     </div>
                 </div>
             </div>
@@ -210,12 +226,14 @@
                 </div>
                 <div class="carrousel-texts">
                     <div class="title-beneficio">
-                        <p>Queima de gordura</p>
+                        <p>Diminui apetite</p>
                     </div>
+
                     <div class="text-beneficio">
-                        <p>O efeito termogênico do </p>
-                        <p>100Peso eleva a queima natural</p>
-                        <p>e acelerada da gordura.</p>
+                        <p> A cápsula possui uma gelatina que gruda no estômago,</p>
+                        <p>fazendo com que este se retraia diminuindo</p>
+                        <p>a ingestão de alimentos em contato com a água.</p>
+                        <!-- <p></p> -->
                     </div>
                 </div>
             </div>
@@ -228,22 +246,22 @@
                 </div>
                 <div class="carrousel-texts">
                     <div class="title-beneficio">
-                        <p>Queima de gordura</p>
+                        <p>Regula o sono e a ansiedade</p>
                     </div>
                     <div class="text-beneficio">
-                        <p>O efeito termogênico do </p>
-                        <p>100Peso eleva a queima natural</p>
-                        <p>e acelerada da gordura.</p>
+                        <p>A Cascara Sagrada é bastante eficaz em </p>
+                        <p>acalmar os nervos, ajudando a combater a ansiedade </p>
+                        <p> e melhorando a qualidade do seu sono.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <button id="btn-compre-agora">
-            <a href="#">
-            COMPRE AGORA
+        <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+            <div id="btn-compre-agora">
+                COMPRE AGORA
+            </div>
         </a>
-        </button>
 
     </div>
 
@@ -259,7 +277,7 @@
             <div class="bloco-1">
                 <div class="header-bloco">
                     <h1>OFERTA RELÂMPAGO</h1>
-                    <p>Compre 2 leve 3</p>
+                    <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div class="img-ofertas">
                     <img id="id-img-ofertas" src="./img/orig-ervas.jpg" />
@@ -270,40 +288,42 @@
                     </div>
                     <div class="clock-time">
                         <p>OFERTA EXPIRA EM:</p>
-                        <p>00:00:00</p>
+                        <div id="the-final-countdown">
+                            <p></p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="precos">
-                    <p id="id-bloco-1-first-price">
+                    <!-- <p id="id-bloco-1-first-price">
                         DE: R$359,70
-                    </p>
-                    <button id="btn-promocional">
+                    </p> -->
+                    <!-- <button id="btn-promocional">
                             PREÇO PRMOCIONAL
-                        </button>
+                        </button> -->
                     <h3>
-                        POR: <span id="id-bloco-1-second-price">R195,70</span>
+                        POR: <span id="id-bloco-1-second-price">R$250,00</span>
                     </h3>
                     <div class="lines">
                         <hr>
                         <p id="id-ou">OU</p>
                         <hr>
                     </div>
-                    <p id="id-juros">12x sem juros de</p>
-                    <p id="id-bloco-1-third-price">R$16,30</p>
-                    <button id="btn-compre-agora">
-                            <a href="#">
-                        COMPRE AGORA
+                    <p id="id-juros">10x sem juros de</p>
+                    <p id="id-bloco-1-third-price">R$25,00</p>
+                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                        <div id="btn-compre-agora">
+                            COMPRE AGORA
+                        </div>
                     </a>
-                    </button>
                     <img src="./img/envio.png">
-                    <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
+                    <p class="envio-bottom-text">Envio via Correios</p>
                 </div>
             </div>
             <div class="bloco-2">
                 <div class="header-bloco">
                     <h1>OFERTA RELÂMPAGO</h1>
-                    <p>Compre 2 leve 3</p>
+                    <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
                     <img id="id-img-ofertas" src="./img/6.jpg" />
@@ -314,7 +334,9 @@
                     </div>
                     <div class="clock-time">
                         <p>OFERTA EXPIRA EM:</p>
-                        <p>00:00:00</p>
+                        <div id="the-final-countdown">
+                            <p></p>
+                        </div>
                     </div>
                 </div>
 
@@ -335,11 +357,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <button id="btn-compre-agora">
-                            <a href="#">
-                       COMPRE AGORA
+                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                        <div id="btn-compre-agora">
+                            COMPRE AGORA
+                        </div>
                     </a>
-                    </button>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -348,7 +370,7 @@
             <div class="bloco-3">
                 <div class="header-bloco">
                     <h1>OFERTA RELÂMPAGO</h1>
-                    <p>Compre 2 leve 3</p>
+                    <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
                     <img id="id-img-ofertas" src="./img/8.jpg" />
@@ -359,7 +381,9 @@
                     </div>
                     <div class="clock-time">
                         <p>OFERTA EXPIRA EM:</p>
-                        <p>00:00:00</p>
+                        <div id="the-final-countdown">
+                            <p></p>
+                        </div>
                     </div>
                 </div>
 
@@ -380,11 +404,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <button id="btn-compre-agora">
-                        <a href="#">
-                        COMPRE AGORA
-                        </a>
-                    </button>
+                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                        <div id="btn-compre-agora">
+                            COMPRE AGORA
+                        </div>
+                    </a>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -395,7 +419,7 @@
             <div class="bloco-1">
                 <div class="header-bloco">
                     <h1>OFERTA RELÂMPAGO</h1>
-                    <p>Compre 2 leve 3</p>
+                    <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
                     <img id="id-img-ofertas" src="./img/3.jpg" />
@@ -412,26 +436,26 @@
 
                 <div class="precos">
                     <p id="id-bloco-1-first-price">
-                        DE: R$359,70
+                        DE: R$568,00
                     </p>
                     <button id="btn-promocional">
                             PREÇO PRMOCIONAL
                         </button>
                     <h3>
-                        POR: <span id="id-bloco-1-second-price">R195,70</span>
+                        POR: <span id="id-bloco-1-second-price">R$518,00</span>
                     </h3>
                     <div class="lines">
                         <hr>
                         <p id="id-ou">OU</p>
                         <hr>
                     </div>
-                    <p id="id-juros">12x sem juros de</p>
-                    <p id="id-bloco-1-third-price">R$16,30</p>
-                    <button id="btn-compre-agora">
-                        <a href="#">
-                        COMPRE AGORA
+                    <p id="id-juros">10x sem juros de</p>
+                    <p id="id-bloco-1-third-price">R$51,18</p>
+                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                        <div id="btn-compre-agora">
+                            COMPRE AGORA
+                        </div>
                     </a>
-                    </button>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -439,7 +463,7 @@
             <div class="bloco-2">
                 <div class="header-bloco">
                     <h1>OFERTA RELÂMPAGO</h1>
-                    <p>Compre 2 leve 3</p>
+                    <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
                     <img id="id-img-ofertas" src="./img/10.jpg" />
@@ -471,11 +495,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <button id="btn-compre-agora">
-                            <a href="#">
-                        COMPRE AGORA
+                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                        <div id="btn-compre-agora">
+                            COMPRE AGORA
+                        </div>
                     </a>
-                    </button>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -484,7 +508,7 @@
             <div class="bloco-3">
                 <div class="header-bloco">
                     <h1>OFERTA RELÂMPAGO</h1>
-                    <p>Compre 2 leve 3</p>
+                    <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
                     <img id="id-img-ofertas" src="./img/12.jpg" />
@@ -516,11 +540,11 @@
                     </div>
                     <p id="id-juros">12x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$16,30</p>
-                    <button id="btn-compre-agora">
-                            <a href="#">
-                       COMPRE AGORA
+                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                        <div id="btn-compre-agora">
+                            COMPRE AGORA
+                        </div>
                     </a>
-                    </button>
                     <img src="./img/envio.png">
                     <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
                 </div>
@@ -528,7 +552,7 @@
         </div>
 
         <div class="blocks-bottom-text">
-            <p>Informamos que 100PESO é um tratamento. Seu resultado pode variar de pessoa para pessoa</p>
+            <p>Informamos que Original Ervas é um tratamento. Seu resultado pode variar de pessoa para pessoa</p>
             <p>Os preços dos produtos estão sujeitos a alteração sem aviso prévio.</p>
 
         </div>
@@ -537,53 +561,49 @@
     <div class="o-que-voce-precisa-saber">
         <div class="mid-section-title" id="id-o-que-voce-precisa-saber">
             <h1>O que você precisa saber</h1>
-            <p>Aqui você encontra as principais dúvidas sobre o 100Peso</p>
+            <p>Aqui você encontra as principais dúvidas sobre o Original Ervas</p>
         </div>
 
         <div class="dropdowns">
             <div class="dropdown-row-1">
-                <p>Os efeitos do 100Peso?<button class="btns-toggle" id="btn-toggle-1">&#9660; </button></p>
+                <p>O Original Ervas vai funcionar pra mim?<button class="btns-toggle" id="btn-toggle-1">&#9660; </button></p>
                 <div class="answers" id="answers-1">
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. </p>
+                    <p class="answer-p">Cada organismo reage de uma forma diferente ao composto, podendo atingir um resultado satisfatório no primeiro mês ou tendo que estender o período de tratamento. As plantas encontradas no Original Ervas, vão desintoxicar o seu corpo,
+                        eliminar os excessos de toxinas e estimular o bom funcionamento do seu metabolismo e organismo, proporcionando assim, o emagrecimento saudável, a queima de gordura e a restauração da saúde do corpo.</p>
                 </div>
-                <p>Em quanto tempo terei resultado com 100Peso?<button class="btns-toggle" id="btn-toggle-2">&#9660; </button></p>
+                <p>Como devo usar o Original Ervas?<button class="btns-toggle" id="btn-toggle-2">&#9660; </button></p>
                 <div class="answers" id="answers-2">
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. </p>
+                    <p class="answer-p">Nos primeiros 7 dias de tratamento, deve-se tomar apenas 1 cápsula do produto às 10 horas sempre acompanhada de 2 copos de água (aproximadamente 500 ml). A partir do oitavo dia, tomar 2 cápsulas, sendo a primeira as 10 horas e a segunda
+                        às 17 horas. </p>
                 </div>
-                <p>O 100Peso vai funcionar em mim? <button class="btns-toggle" id="btn-toggle-3">&#9660; </button></p>
+                <p>Como funciona o Original Ervas? <button class="btns-toggle" id="btn-toggle-3">&#9660; </button></p>
                 <div class="answers" id="answers-3">
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. </p>
+                    <p class="answer-p">A cápsula em contato com a água forma uma gelatina que “gruda” nas paredes do estômago, fazendo com que o mesmo se retraia, levando você a ingerir menos alimentos pelo fato de sentir-se mais saciado e promovendo assim, a diminuição
+                        de abdômen e medidas.</p>
                 </div>
-                <p>Qual o prazo de entrega do 100Peso? <button class="btns-toggle" id="btn-toggle-4">&#9660; </button></p>
+                <p>Em quanto tempo terei resultados? <button class="btns-toggle" id="btn-toggle-4">&#9660; </button></p>
                 <div class="answers" id="answers-4">
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. </p>
+                    <p class="answer-p">Logo nas primeiras semanas pode ser que você já note resultados no seu peso, corpo, medidas, energia e disposição. Mantenha sempre o contato com o seu representante!</p>
                 </div>
             </div>
             <div class="dropdown-row-2">
-                <p>Quais Os efeitos do 100Peso? <button class="btns-toggle" id="btn-toggle-5">&#9660; </button></p>
+                <p>Quem não pode tomar Original Ervas? <button class="btns-toggle" id="btn-toggle-5">&#9660; </button></p>
                 <div class="answers" id="answers-5">
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. </p>
+                    <p class="answer-p">O Original Ervas não deve ser consumido por lactantes, gestantes, pessoas com envolvimento cardíaco, crianças abaixo de 13 anos e idosos acima de 60 anos sem autorização prévia de um médico. </p>
                 </div>
-                <p>Em quanto tempo terei resultado com 100Peso? <button class="btns-toggle" id="btn-toggle-6">&#9660; </button></p>
+                <p>Estou fazendo o uso de antibióticos, posso tomar o Original Ervas? <button class="btns-toggle" id="btn-toggle-6">&#9660; </button></p>
                 <div class="answers" id="answers-6">
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. </p>
+                    <p class="answer-p">Não. Enquanto estiver fazendo uso de antibióticos como Amoxicilina, Cefalexina, Azitromicina entre outros, você deve interromper o uso do composto Original Ervas.</p>
                 </div>
-                <p>O 100Peso vai funcionar em mim? <button class="btns-toggle" id="btn-toggle-7">&#9660; </button></p>
+                <p>Preciso fazer atividade física durante o tratamento?<button class="btns-toggle" id="btn-toggle-7">&#9660; </button></p>
                 <div class="answers" id="answers-7">
-                    <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. </p>
+                    <p class="answer-p">Não necessariamente, o composto irá agir da mesma maneira, porém realizar atividades físicas durante ou até mesmo depois do tratamento, auxiliam na aceleração do seu metabolismo e só trazem benefícios para você e sua saúde.</p>
                 </div>
-                <p>Qual o prazo de entrega do 100Peso? <button class="btns-toggle" id="btn-toggle-8">&#9660; </button></p>
+                <!-- <p>Qual o prazo de entrega do 100Peso? <button class="btns-toggle" id="btn-toggle-8">&#9660; </button></p>
                 <div class="answers" id="answers-8">
                     <p class="answer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                         specimen book. </p>
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -591,26 +611,32 @@
     </div>
 
     <div class="satisfacao-garantida">
-        <a href="#"><img src="./img/satisfacao_garantida.jpg" /></a>
+        <a href="#"><img src="./img/subbanners_modelo1.png" /></a>
+    </div>
+
+    <div class="satisfacao-garantida-mobile">
+        <a href="#"><img src="./img/subabnner_mobile.jpg" /></a>
     </div>
 
     <div class="midia">
 
         <div class="mid-section-title">
-            <h1>100Peso na mídia</h1>
-            <p>São depoimentos de terceiros, somos isentos de quaisquer responsabilidade.</p>
+            <h1>Nossas redes sociais</h1>
+            <p>Siga-nos nas redes sociais para ficar por dentro</p>
         </div>
 
         <div class="portais">
-            <div class="each-midia">
-                <div class="midia-img">
-                    <img src="./img/midia_1.jpg" />
+            <a href="https://instagram.com/corpovitta?utm_medium=copy_link">
+                <div class="each-midia">
+                    <div class="midia-img">
+                        <img src="./img/instagram-round-icon-png-5.jpg" />
+                    </div>
+                    <div class="midiattext">
+                        <p>@corpovitta</p>
+                    </div>
                 </div>
-                <div class="midiattext">
-                    <p>“Um dos segredos que faz o 100Peso ser tão poderoso é sua composição. São ingredientes naturais que proporciona um bem estar rápido e eficaz.”</p>
-                </div>
-            </div>
-            <div class="each-midia">
+            </a>
+            <!-- <div class="each-midia">
                 <div class="midia-img">
                     <img src="./img/midia_2.jpg" />
                 </div>
@@ -633,16 +659,16 @@
                 <div class="midiattext">
                     <p>“Um dos segredos que faz o 100Peso ser tão poderoso é sua composição. São ingredientes naturais que proporciona um bem estar rápido e eficaz.”</p>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
         <div class="midia-btn">
-            <button id="btn-compre-agora">
-                    <a href="#">
-            COMPRE AGORA
-        </a>
-        </button>
+            <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                <div id="btn-compre-agora">
+                    COMPRE AGORA
+                </div>
+            </a>
         </div>
     </div>
 
@@ -650,7 +676,7 @@
 
         <div class="mid-section-title">
             <h1>Aqui sua compra é 100% segura!</h1>
-            <p>Não se preocupe, comprar na 100PESO é seguro e totalmente confiável</p>
+            <p>Não se preocupe, comprar na Corpo Vita é seguro e totalmente confiável</p>
         </div>
 
 
@@ -671,8 +697,8 @@
                             <img src="./img/safe_locker.png" />
                         </div>
                         <div class="safe-texts">
-                            <h1>Dados Pessoais</h1>
-                            <p>São totalmente sigilosos e não são compartilhados.</p>
+                            <h1>Dados Financeiros</h1>
+                            <p>Gravados em ambiente 100% seguro.</p>
                         </div>
                     </div>
                 </div>
@@ -683,8 +709,8 @@
                             <img src="./img/safe_locker.png" />
                         </div>
                         <div class="safe-texts">
-                            <h1>Dados Pessoais</h1>
-                            <p>São totalmente sigilosos e não são compartilhados.</p>
+                            <h1>Site Confiável</h1>
+                            <p>Monitorado todo o tempo por empresas de segurança digital.</p>
                         </div>
                     </div>
                     <div class="each-safe">
@@ -692,8 +718,8 @@
                             <img src="./img/safe_locker.png" />
                         </div>
                         <div class="safe-texts">
-                            <h1>Dados Pessoais</h1>
-                            <p>São totalmente sigilosos e não são compartilhados.</p>
+                            <h1>Entrega em todo o Brasil</h1>
+                            <p>Logistica eficaz entregas feitas no prazo combinado.</p>
                         </div>
                     </div>
                 </div>
@@ -705,17 +731,17 @@
 
 
         <div class="safe-data">
-            <button id="btn-compre-agora">
-                    <a href="#">
-                COMPRE AGORA
+            <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                <div id="btn-compre-agora">
+                    COMPRE AGORA
+                </div>
             </a>
-            </button>
         </div>
 
 
     </div>
 
-    <div class="email">
+    <!-- <div class="email">
         <div class="img-email">
             <img src="img/email.png" />
         </div>
@@ -739,7 +765,7 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
     <div class="rodape">
         <div class="rows-rodape">
@@ -758,8 +784,8 @@
             </div>
             <div class="duvidas">
                 <h4>Dúvidas?</h4>
-                <p>Para saber mais detalhes sobre o 100PESO consulte nossa página de "Dúvidas" ou entre em contato conosco através do link abaixo:</p>
-                <p><a href="#">Chat online</a></p>
+                <p>Para saber mais detalhes sobre o Corpo Vita consulte nossa página de "Dúvidas" ou entre em contato conosco através do link abaixo:</p>
+                <p><a href="#">(11) 99395-4647</a></p>
             </div>
             <div class="segurança-e-certificados">
                 <h4>Produtos e Atendimento</h4>

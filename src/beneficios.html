@@ -19,16 +19,24 @@
 
 
     <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-
+        <div class="new-sidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Produtos</a>
+            <a href="#" class="w3-bar-item w3-button">Atendimento</a>
+            <a href="#" class="w3-bar-item w3-button">Perguntas Frequentes</a>
+            <a href="#" class="w3-bar-item w3-button">Políticas de Privacidade</a>
+            <a href="#" class="w3-bar-item w3-button">Termos e Condições</a>
+            <a href="#" class="w3-bar-item w3-button">Revendedores Oficiais</a>
+            <a href="#" class="w3-bar-item w3-button">Referências Científicas</a>
+            <a href="#" class="w3-bar-item w3-button">Meus pedidos</a>
+            <a href="#" class="w3-bar-item w3-button">Minha conta</a>
+        </div>
     </div>
 
     <!-- Page Content -->
-    <div class="w3-teal" style="display:none">
-        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-teal" style="display:none; background-color: #e8ceb3 !important;">
+        <button class="w3-button w3-teal w3-xlarge" style="background-color: #e8ceb3 !important; color: black !important;;" onclick="w3_open()">☰</button>
         <img id="img-logo-header" src="./img/corpo_vita.png">
         <span> <a href="#">🛒</a></span>
     </div>
