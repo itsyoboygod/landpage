@@ -39,7 +39,11 @@
     <div class="w3-teal" style="display:none; background-color: #e8ceb3 !important;">
         <button class="w3-button w3-teal w3-xlarge" style="background-color: #e8ceb3 !important; color: black !important;;" onclick="w3_open()">☰</button>
         <img id="img-logo-header" src="./img/corpo_vita.png">
-        <span> <a href="#">🛒</a></span>
+        <a href="#">
+            <div class="buttons-header" id="id-shop-car-header">
+                <img src="./img/shopcart.png">
+            </div>
+        </a>
     </div>
 
     <div class="back-header">
@@ -62,9 +66,11 @@
             <button class="buttons-header" id="id-btn-beneficios">
             <a href="beneficios.html">BENEFÍCIOS</a>
         </button>
-            <button class="buttons-header" id="id-btn-carrinho-compras">
-            <a href="#">🛒</a>
-        </button>
+            <a href="#">
+                <div class="buttons-header" id="id-shop-car-header">
+                    <img src="./img/shopcart.png">
+                </div>
+            </a>
         </div>
     </div>
 
@@ -77,28 +83,28 @@
 
     <div class="badge">
         <div class="items">
-            <div class="icon"><img src="./img/item-star.png"></div>
+            <div class="icon"><img src="./img/fitness.png"></div>
             <div class="texts">
                 <p>O COMPOSTO EMAGRECEDOR</p>
                 <p>100% NATURAL</p>
             </div>
         </div>
         <div class="items">
-            <div class="icon"><img src="./img/item-card.png"></div>
+            <div class="icon"><img src="./img/credit-card.png"></div>
             <div class="texts">
                 <p>PAGUE COM CARTÃO</p>
                 <p>EM ATÉ 10X SEM JUROS</p>
             </div>
         </div>
         <div class="items">
-            <div class="icon"><img src="./img/item-truck.png"></div>
+            <div class="icon"><img src="./img/truck.png"></div>
             <div class="texts">
                 <!-- <p>FRETE GRÁTIS</p> -->
                 <p>ENVIAMOS PARA TODO O BRASIL</p>
             </div>
         </div>
         <div class="items">
-            <div class="icon"><img src="./img/item-lock.png"></div>
+            <div class="icon"><img src="./img/padlock.png"></div>
             <div class="texts">
                 <p>SITE 100% SEGURO</p>
                 <!-- <p>COM SEGURANÇA SSL</p> -->
@@ -116,14 +122,12 @@
 
         <div class="selfies">
             <div class="each-photo">
-                <div class="photo-artista"> <img id="id-famoso-foto" src="./img/bf_af.jpeg"></div>
+                <div class="photo-artista"> <img id="id-famoso-foto" src="./img/antesdepois1.jpg"></div>
                 <!-- <div class="title-artista">
-
                 </div> -->
-
             </div>
             <div class="each-photo">
-                <div class="photo-artista"><img id="id-famoso-foto" src="./img/teste4.jpeg"></div>
+                <div class="photo-artista"><img id="id-famoso-foto" src="./img/antesdepois2.jpg"></div>
                 <!-- <div class="title-artista">
                     <p>Adriana</p>
                 </div>
@@ -135,7 +139,7 @@
                 </div> -->
             </div>
             <div class="each-photo">
-                <div class="photo-artista"><img id="id-famoso-foto" src="./img/teste5.jpeg"></div>
+                <div class="photo-artista"><img id="id-famoso-foto" src="./img/antesdepois3.jpg"></div>
                 <!-- <div class="title-artista">
                     <p>Jefferson</p>
                 </div>
@@ -147,7 +151,7 @@
                 </div> -->
             </div>
             <div class="each-photo">
-                <div class="photo-artista"><img id="id-famoso-foto" src="./img/teste6.jpeg"></div>
+                <div class="photo-artista"><img id="id-famoso-foto" src="./img/antesdepois4.jpg"></div>
                 <!-- <div class="title-artista">
                     <p>Cristina</p>
                 </div>
@@ -162,13 +166,13 @@
 
         </div>
 
-        <div class="btn-artistas">
+        <!-- <div class="btn-artistas">
             <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
                 <div id="btn-compre-agora">
                     COMPRE AGORA
                 </div>
             </a>
-        </div>
+        </div> -->
 
     </div>
 
@@ -183,7 +187,7 @@
         <div class="beneficios">
             <div class="each-beneficio">
                 <div class="img-beneficio">
-                    <img src="./img/queima-de-gordura.png">
+                    <img src="./img/fitness.png">
                 </div>
                 <div class="carrousel-texts">
                     <div class="title-beneficio">
@@ -203,7 +207,7 @@
             </div>
             <div class="each-beneficio">
                 <div class="img-beneficio">
-                    <img src="./img/queima-de-gordura.png">
+                    <img src="./img/speed.png">
                 </div>
                 <div class="carrousel-texts">
                     <div class="title-beneficio">
@@ -222,7 +226,7 @@
             </div>
             <div class="each-beneficio">
                 <div class="img-beneficio">
-                    <img src="./img/queima-de-gordura.png">
+                    <img src="./img/dish.png">
                 </div>
                 <div class="carrousel-texts">
                     <div class="title-beneficio">
@@ -242,7 +246,7 @@
             </div>
             <div class="each-beneficio">
                 <div class="img-beneficio">
-                    <img src="./img/queima-de-gordura.png">
+                    <img src="./img/balance.png">
                 </div>
                 <div class="carrousel-texts">
                     <div class="title-beneficio">
@@ -257,11 +261,11 @@
             </div>
         </div>
 
-        <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+        <!-- <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
             <div id="btn-compre-agora">
                 COMPRE AGORA
             </div>
-        </a>
+        </a> -->
 
     </div>
 
@@ -280,11 +284,12 @@
                     <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div class="img-ofertas">
-                    <img id="id-img-ofertas" src="./img/orig-ervas.jpg" />
+                    <img id="id-img-ofertas" src="./img/prod1.jpg" />
                 </div>
                 <div class="countdown">
                     <div class="clock-span">
-                        <span>🕑</span>
+                        <img src="./img/hourglass.png" />
+                        <span></span>
                     </div>
                     <div class="clock-time">
                         <p>OFERTA EXPIRA EM:</p>
@@ -298,9 +303,9 @@
                     <!-- <p id="id-bloco-1-first-price">
                         DE: R$359,70
                     </p> -->
-                    <!-- <button id="btn-promocional">
+                    <button id="btn-promocional">
                             PREÇO PRMOCIONAL
-                        </button> -->
+                        </button>
                     <h3>
                         POR: <span id="id-bloco-1-second-price">R$250,00</span>
                     </h3>
@@ -311,13 +316,13 @@
                     </div>
                     <p id="id-juros">10x sem juros de</p>
                     <p id="id-bloco-1-third-price">R$25,00</p>
-                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                    <a href="https://loja.corpovita.com.br/produto/emagrecedor-natural-original-ervas/">
                         <div id="btn-compre-agora">
                             COMPRE AGORA
                         </div>
                     </a>
                     <img src="./img/envio.png">
-                    <p class="envio-bottom-text">Envio via Correios</p>
+                    <!-- <p class="envio-bottom-text"></p> -->
                 </div>
             </div>
             <div class="bloco-2">
@@ -326,11 +331,11 @@
                     <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
-                    <img id="id-img-ofertas" src="./img/6.jpg" />
+                    <img id="id-img-ofertas" src="./img/prod4.jpg" />
                 </div>
                 <div class="countdown">
                     <div class="clock-span">
-                        <span>🕑</span>
+                        <img src="./img/hourglass.png" />
                     </div>
                     <div class="clock-time">
                         <p>OFERTA EXPIRA EM:</p>
@@ -342,28 +347,28 @@
 
                 <div class="precos">
                     <p id="id-bloco-1-first-price">
-                        DE: R$359,70
+                        DE: R$284,00
                     </p>
                     <button id="btn-promocional">
                             PREÇO PRMOCIONAL
                         </button>
                     <h3>
-                        POR: <span id="id-bloco-1-second-price">R195,70</span>
+                        POR: <span id="id-bloco-1-second-price">R$262,00</span>
                     </h3>
                     <div class="lines">
                         <hr>
                         <p id="id-ou">OU</p>
                         <hr>
                     </div>
-                    <p id="id-juros">12x sem juros de</p>
-                    <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                    <p id="id-juros">10x sem juros de</p>
+                    <p id="id-bloco-1-third-price">R$26,20</p>
+                    <a href="https://loja.corpovita.com.br/produto/kit-emagrecedor-original-ervas-corpo-vita-seca-barriga-denature/">
                         <div id="btn-compre-agora">
                             COMPRE AGORA
                         </div>
                     </a>
                     <img src="./img/envio.png">
-                    <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
+                    <!-- <p class="envio-bottom-text"></p> -->
                 </div>
 
             </div>
@@ -373,11 +378,11 @@
                     <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
-                    <img id="id-img-ofertas" src="./img/8.jpg" />
+                    <img id="id-img-ofertas" src="./img/prod3.jpg" />
                 </div>
                 <div class="countdown">
                     <div class="clock-span">
-                        <span>🕑</span>
+                        <img src="./img/hourglass.png" />
                     </div>
                     <div class="clock-time">
                         <p>OFERTA EXPIRA EM:</p>
@@ -389,28 +394,28 @@
 
                 <div class="precos">
                     <p id="id-bloco-1-first-price">
-                        DE: R$359,70
+                        DE: R$276,50
                     </p>
                     <button id="btn-promocional">
                             PREÇO PRMOCIONAL
                         </button>
                     <h3>
-                        POR: <span id="id-bloco-1-second-price">R195,70</span>
+                        POR: <span id="id-bloco-1-second-price">R$259,00</span>
                     </h3>
                     <div class="lines">
                         <hr>
                         <p id="id-ou">OU</p>
                         <hr>
                     </div>
-                    <p id="id-juros">12x sem juros de</p>
-                    <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                    <p id="id-juros">10x sem juros de</p>
+                    <p id="id-bloco-1-third-price">R$25,90</p>
+                    <a href="https://loja.corpovita.com.br/produto/kit-emagrecedor-original-ervas-corpo-vita-desincha-denature/">
                         <div id="btn-compre-agora">
                             COMPRE AGORA
                         </div>
                     </a>
                     <img src="./img/envio.png">
-                    <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
+                    <!-- <p class="envio-bottom-text"></p> -->
                 </div>
             </div>
         </div>
@@ -422,7 +427,7 @@
                     <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
-                    <img id="id-img-ofertas" src="./img/3.jpg" />
+                    <img id="id-img-ofertas" src="./img/prod5.jpg" />
                 </div>
                 <!-- <div class="countdown">
                     <div class="clock-span">
@@ -436,13 +441,13 @@
 
                 <div class="precos">
                     <p id="id-bloco-1-first-price">
-                        DE: R$568,00
+                        DE: R$310,50
                     </p>
                     <button id="btn-promocional">
                             PREÇO PRMOCIONAL
                         </button>
                     <h3>
-                        POR: <span id="id-bloco-1-second-price">R$518,00</span>
+                        POR: <span id="id-bloco-1-second-price">R$271,00</span>
                     </h3>
                     <div class="lines">
                         <hr>
@@ -450,14 +455,14 @@
                         <hr>
                     </div>
                     <p id="id-juros">10x sem juros de</p>
-                    <p id="id-bloco-1-third-price">R$51,18</p>
-                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                    <p id="id-bloco-1-third-price">R$27,10</p>
+                    <a href="https://loja.corpovita.com.br/produto/kit-emagrecedor-original-ervas-corpo-vita-seca-barriga-denature-desincha-denature/">
                         <div id="btn-compre-agora">
                             COMPRE AGORA
                         </div>
                     </a>
                     <img src="./img/envio.png">
-                    <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
+                    <!-- <p class="envio-bottom-text"></p> -->
                 </div>
             </div>
             <div class="bloco-2">
@@ -466,7 +471,7 @@
                     <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
-                    <img id="id-img-ofertas" src="./img/10.jpg" />
+                    <img id="id-img-ofertas" src="./img/prod6.jpg" />
                 </div>
                 <!-- <div class="countdown">
                     <div class="clock-span">
@@ -480,28 +485,28 @@
 
                 <div class="precos">
                     <p id="id-bloco-1-first-price">
-                        DE: R$359,70
+                        DE: R$621,00
                     </p>
                     <button id="btn-promocional">
                             PREÇO PRMOCIONAL
                         </button>
                     <h3>
-                        POR: <span id="id-bloco-1-second-price">R195,70</span>
+                        POR: <span id="id-bloco-1-second-price">R$542,00</span>
                     </h3>
                     <div class="lines">
                         <hr>
                         <p id="id-ou">OU</p>
                         <hr>
                     </div>
-                    <p id="id-juros">12x sem juros de</p>
-                    <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                    <p id="id-juros">10x sem juros de</p>
+                    <p id="id-bloco-1-third-price">R$54,20</p>
+                    <a href="https://loja.corpovita.com.br/produto/kit-2-emagrecedor-original-ervas-corpo-vita-2-seca-barriga-denature-2-desincha-denature/">
                         <div id="btn-compre-agora">
                             COMPRE AGORA
                         </div>
                     </a>
                     <img src="./img/envio.png">
-                    <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
+                    <!-- <p class="envio-bottom-text"></p> -->
                 </div>
 
             </div>
@@ -511,7 +516,7 @@
                     <!-- <p>Compre 2 leve 3</p> -->
                 </div>
                 <div>
-                    <img id="id-img-ofertas" src="./img/12.jpg" />
+                    <img id="id-img-ofertas" src="./img/prod2.jpg" />
                 </div>
                 <!-- <div class="countdown">
                     <div class="clock-span">
@@ -525,28 +530,28 @@
 
                 <div class="precos">
                     <p id="id-bloco-1-first-price">
-                        DE: R$359,70
+                        DE: R$931,50
                     </p>
                     <button id="btn-promocional">
                             PREÇO PRMOCIONAL
                         </button>
                     <h3>
-                        POR: <span id="id-bloco-1-second-price">R195,70</span>
+                        POR: <span id="id-bloco-1-second-price">R$813,00</span>
                     </h3>
                     <div class="lines">
                         <hr>
                         <p id="id-ou">OU</p>
                         <hr>
                     </div>
-                    <p id="id-juros">12x sem juros de</p>
-                    <p id="id-bloco-1-third-price">R$16,30</p>
-                    <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
+                    <p id="id-juros">10x sem juros de</p>
+                    <p id="id-bloco-1-third-price">R$81,30</p>
+                    <a href="https://loja.corpovita.com.br/produto/kit-3-emagrecedor-original-ervas-corpo-vita-3-seca-barriga-denature-3-desincha-denature/">
                         <div id="btn-compre-agora">
                             COMPRE AGORA
                         </div>
                     </a>
                     <img src="./img/envio.png">
-                    <p class="envio-bottom-text">Envio em até 24h úteis, via Correios</p>
+                    <!-- <p class="envio-bottom-text"></p> -->
                 </div>
             </div>
         </div>
@@ -619,12 +624,10 @@
     </div>
 
     <div class="midia">
-
         <div class="mid-section-title">
             <h1>Nossas redes sociais</h1>
             <p>Siga-nos nas redes sociais para ficar por dentro</p>
         </div>
-
         <div class="portais">
             <a href="https://instagram.com/corpovitta?utm_medium=copy_link">
                 <div class="each-midia">
@@ -660,9 +663,8 @@
                     <p>“Um dos segredos que faz o 100Peso ser tão poderoso é sua composição. São ingredientes naturais que proporciona um bem estar rápido e eficaz.”</p>
                 </div>
             </div> -->
-
         </div>
-
+        <!-- 
         <div class="midia-btn">
             <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
                 <div id="btn-compre-agora">
@@ -670,6 +672,7 @@
                 </div>
             </a>
         </div>
+    -->
     </div>
 
     <div class="seguranca">
@@ -685,7 +688,7 @@
                 <div class="first-row-safe">
                     <div class="each-safe">
                         <div class="each-img-safe">
-                            <img src="./img/safe_locker.png" />
+                            <img src="./img/personal-information.png" />
                         </div>
                         <div class="safe-texts">
                             <h1>Dados Pessoais</h1>
@@ -694,7 +697,7 @@
                     </div>
                     <div class="each-safe">
                         <div class="each-img-safe">
-                            <img src="./img/safe_locker.png" />
+                            <img src="./img/data.png" />
                         </div>
                         <div class="safe-texts">
                             <h1>Dados Financeiros</h1>
@@ -706,7 +709,7 @@
                 <div class="first-row-safe">
                     <div class="each-safe">
                         <div class="each-img-safe">
-                            <img src="./img/safe_locker.png" />
+                            <img src="./img/shield.png" />
                         </div>
                         <div class="safe-texts">
                             <h1>Site Confiável</h1>
@@ -715,7 +718,7 @@
                     </div>
                     <div class="each-safe">
                         <div class="each-img-safe">
-                            <img src="./img/safe_locker.png" />
+                            <img src="./img/truck.png" />
                         </div>
                         <div class="safe-texts">
                             <h1>Entrega em todo o Brasil</h1>
@@ -730,13 +733,13 @@
         </div>
 
 
-        <div class="safe-data">
+        <!-- <div class="safe-data">
             <a href="https://corpovita.com.br/checkout/v3/start/419064660/c0eeef34803c2322cb0a86c3c96a9903b4728f9b?from_store=1">
                 <div id="btn-compre-agora">
                     COMPRE AGORA
                 </div>
             </a>
-        </div>
+        </div> -->
 
 
     </div>
