@@ -68,7 +68,9 @@
     .portais {
         flex-wrap: wrap !important;
     }
-    .each-safe {}
+    .each-safe {
+        width: 100% !important;
+    }
     .input-email {
         width: 90% !important;
     }
@@ -898,6 +900,7 @@ a {
     place-content: center;
     justify-content: space-evenly;
     margin: 20px !important;
+    width: 40%;
 }
 
 .each-img-safe img {
