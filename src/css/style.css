@@ -80,7 +80,7 @@
     /* ================================BENEFICIOS================================ */
     .sobre-o-produto {
         flex-direction: column !important;
-        width: 97% !important;
+        /* width: 97% !important; */
     }
     .sobre-title {
         width: 100% !important;
@@ -99,6 +99,7 @@
     }
     .outro-beneficios-title h1 {
         text-align: center !important;
+        margin: 10px 0 !important;
     }
     .beneficios-pros {
         align-self: center;
@@ -111,6 +112,7 @@
     }
     .composicao-header-title {
         width: 100% !important;
+        justify-content: center !important;
     }
     .composicao-header-title h1 {
         font-size: 5rem;
@@ -118,10 +120,16 @@
         font-size: 3rem;
     }
     .composicao-header-text {
-        width: 100% !important;
+        width: 90% !important;
+        margin: 0 !important;
+        text-align: justify;
+        align-self: center;
     }
     .qna-header-title h1 {
         font-size: 3rem !important;
+    }
+    .beneficios-bottom-text {
+        width: 90% !important;
     }
     .warning-bottom p {
         font-size: 0.8rem !important;
@@ -1122,8 +1130,10 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 90%;
-    margin: 50px auto;
+    padding: 50px 0;
+    width: 100%;
+    /* margin: 50px auto; */
+    background: #e8ceb38f;
 }
 
 .sobre-title {
@@ -1136,13 +1146,13 @@ a {
 .sobre-title h1 {
     margin: 0;
     font-family: "Open Sans", sans-serif !important;
-    color: #0078b7;
+    color: #475f49;
     font-size: 7rem;
     text-align: center;
 }
 
 .pote-img {
-    width: 50%;
+    width: 30%;
     align-self: center;
 }
 
@@ -1153,7 +1163,7 @@ a {
 .sobre-text {
     display: flex;
     width: 50%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: justify;
@@ -1162,9 +1172,11 @@ a {
 .sobre-text p {
     margin: 0;
     font-family: "Open Sans", sans-serif !important;
-    color: #534f52;
+    color: #475f49;
     font-size: 1rem;
     text-align: justify;
+    font-weight: bold;
+    width: 90%;
 }
 
 .outros-beneficios {
@@ -1178,23 +1190,33 @@ a {
 .beneficios-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .beneficios-pros {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 10px 50px;
     justify-content: space-evenly;
+}
+
+.beneficios-contra {
+    margin: 0px 50px;
 }
 
 .outro-beneficios-title h1 {
     margin: 0;
     font-family: "Open Sans", sans-serif !important;
-    color: #0078b7;
+    color: #475f49;
     font-size: 1.5rem;
     text-align: left;
+}
+
+li::marker {
+    font-size: 3rem;
+    height: 10px;
+    color: #475f49;
 }
 
 .outro-beneficios-list {
@@ -1204,13 +1226,18 @@ a {
     justify-content: center;
 }
 
+.outro-beneficios-list ul {
+    margin: 0 10px;
+}
+
 .outro-beneficios-list p {
     font-size: 1.2rem;
+    margin: 0;
 }
 
 .beneficios-bottom-text {
     display: flex;
-    width: 60%;
+    width: 40%;
     align-self: center;
 }
 
@@ -1225,22 +1252,25 @@ a {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    padding: 50px 0;
+    background-color: whitesmoke;
 }
 
 .composicao-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 80%;
 }
 
 .composicao-header-title {
     display: flex;
     width: 50%;
+    margin: 0 10px;
     font-size: 3rem;
-    color: #0078b7;
+    color: #475f49;
     font-family: "Open Sans", sans-serif !important;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .composicao-header-title h1 {
@@ -1257,7 +1287,7 @@ a {
     display: flex;
     font-size: 3rem;
     width: 50%;
-    color: #0078b7;
+    color: #475f49;
     font-family: "Open Sans", sans-serif !important;
     justify-content: center;
     margin: auto;
@@ -1270,12 +1300,14 @@ a {
 
 .composicao-header-text {
     display: flex;
-    width: 50%;
-    font-size: 0.8rem;
+    width: 30%;
+    margin: 0 10px;
+    font-size: 1rem;
     color: grey;
     font-family: "Open Sans", sans-serif !important;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .warning-bottom {

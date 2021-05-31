@@ -21,49 +21,46 @@
     <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
         <div class="new-sidebar">
             <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#" class="w3-bar-item w3-button">Produtos</a>
-            <a href="#" class="w3-bar-item w3-button">Atendimento</a>
-            <a href="#" class="w3-bar-item w3-button">Perguntas Frequentes</a>
-            <a href="#" class="w3-bar-item w3-button">Políticas de Privacidade</a>
-            <a href="#" class="w3-bar-item w3-button">Termos e Condições</a>
-            <a href="#" class="w3-bar-item w3-button">Revendedores Oficiais</a>
-            <a href="#" class="w3-bar-item w3-button">Referências Científicas</a>
-            <a href="#" class="w3-bar-item w3-button">Meus pedidos</a>
-            <a href="#" class="w3-bar-item w3-button">Minha conta</a>
+            <!-- <a href="/" class="w3-bar-item w3-button">Home</a> -->
+            <a href="https://loja.corpovita.com.br/" class="w3-bar-item w3-button">Faça seu pedido</a>
+            <a href="https://api.whatsapp.com/send?phone=5511993954647" class="w3-bar-item w3-button">Tire suas dúvidas</a>
+            <a href="https://api.whatsapp.com/send?phone=5511993954647" class="w3-bar-item w3-button">Atendimento</a>
+            <a href="beneficios.html" class="w3-bar-item w3-button">Benefícios</a>
+            <a href="https://loja.corpovita.com.br/produto/emagrecedor-natural-original-ervas/" class="w3-bar-item w3-button">Meus pedidos</a>
         </div>
     </div>
 
     <!-- Page Content -->
     <div class="w3-teal" style="display:none; background-color: #e8ceb3 !important;">
-        <button class="w3-button w3-teal w3-xlarge" style="background-color: #e8ceb3 !important; color: black !important;;" onclick="w3_open()">☰</button>
+        <button class="w3-button w3-teal w3-xlarge" style="background-color: #e8ceb3 !important; color: black !important; border:  none; font-size: 1.5rem;" onclick="w3_open()">☰</button>
         <img id="img-logo-header" src="./img/corpo_vita.png">
-        <span> <a href="#">🛒</a></span>
+        <div class="buttons-header" id="id-shop-car-header">
+            <img src="./img/shopcart.png">
+        </div>
     </div>
 
     <div class="back-header">
         <div class="header">
             <button id="id-btn-faca-seu-pedido">
-            <a href="#">FAÇA SEU PEDIDO</a>
+                <a href="https://loja.corpovita.com.br/">FAÇA SEU PEDIDO</a>
         </button>
             <button class="buttons-header" id="id-btn-tire-suas-duvidas">
-            <a href="#">TURE SUAS DÚVIDAS</a>
+                <a href="https://api.whatsapp.com/send?phone=5511993954647">TURE SUAS DÚVIDAS</a>
         </button>
             <button id="id-btn-logo">
                 <img id="id-img-logo" src="./img/corpo_vita.png">
         </button>
-            <button class="buttons-header" id="id-btn-minha-conta">
-            <a href="#">MINHA CONTA</a>
-        </button>
             <button class="buttons-header" id="id-btn-atendimento">
-            <a href="#">ATENDIMENTO</a>
+                <a href="https://api.whatsapp.com/send?phone=5511993954647">ATENDIMENTO</a>
         </button>
             <button class="buttons-header" id="id-btn-beneficios">
             <a href="#">BENEFÍCIOS</a>
         </button>
-            <button class="buttons-header" id="id-btn-carrinho-compras">
-            <a href="#">🛒</a>
-        </button>
+            <a href="https://loja.corpovita.com.br/produto/emagrecedor-natural-original-ervas/">
+                <div class="buttons-header" id="id-shop-car-header">
+                    <img src="./img/shopcart.png">
+                </div>
+            </a>
         </div>
     </div>
 
